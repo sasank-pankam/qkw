@@ -1,0 +1,9 @@
+Package: qkw
+Version: 1.0.0-1
+Architecture: amd64
+Maintainer: Sasank P <sasaankme@gmail.com>
+Uploaders: Ravi K <ravikishorejanjam@gmail.com>
+Depends: libc6 (>= 2.17), libgcc1 (>= 1:3.0), libsqlite3-0 (>= 3.5.9), libstdc++6 (>= 5.2)
+Section: utils
+Priority: optional
+Description: Generalizing aliasing to simplify navigation, annotate CLI commands, add help-strings
