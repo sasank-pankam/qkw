@@ -1,0 +1,23 @@
+# this file can be pushed to aur by filling the necessary fields like version
+
+Maintainer: sasank p <sasaankme@gmail.com>
+Contributor: Ravi K <ravikishorejanjam@gmail.com>
+pkgname=qkw
+pkgver={{version}}
+pkgrel=1
+pkgdesc="Generalizing aliasing to simplify navigation, annotate CLI commands, add help-strings"
+arch=('x86_64')
+license=('GNU')
+depends=("sqlite")
+options=('!strip')
+url="https://github.com/sasank-pankam/qkw"
+download_path="releases/download/${pkgver}/qkw-${pkgver}.deb"
+
+source=("${url}/${download_path}")
+sha256sums=('SKIP')
+
+package() {
+	tar -xvf data.tar.xz -C ${pkgdir}
+	install -dm755 "$pkgdir/usr/bin"
+}
+
