@@ -1,5 +1,5 @@
 Package: qkw
-Version: 1.0.0-1
+Version: {{version}}
 Architecture: amd64
 Maintainer: Sasank P <sasaankme@gmail.com>
 Uploaders: Ravi K <ravikishorejanjam@gmail.com>

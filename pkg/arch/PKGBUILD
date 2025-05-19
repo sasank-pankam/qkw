@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc="Generalizing aliasing to simplify navigation, annotate CLI commands, add help-strings"
 arch=('x86_64')
 license=('GNU')
-depends=("sqlite")
+depends=("sqlite>=3.5.9")
 options=('!strip')
 url="https://github.com/sasank-pankam/qkw"
 download_path="releases/download/${pkgver}/qkw-${pkgver}.deb"
