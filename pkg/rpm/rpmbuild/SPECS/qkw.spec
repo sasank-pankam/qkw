@@ -3,7 +3,7 @@ version:        {{version}}
 release:        1%{?dist}
 summary:        generalizing aliasing to simplify navigation, annotate cli commands, add help-strings
 
-license:        gnu
+license:        GPL
 buildarch:      x86_64
 url:            https://github.com/sasank-pankam/qkw
 Requires:       sqlite >= 3.5.9

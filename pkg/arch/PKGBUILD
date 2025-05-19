@@ -7,7 +7,7 @@ pkgver={{version}}
 pkgrel=1
 pkgdesc="Generalizing aliasing to simplify navigation, annotate CLI commands, add help-strings"
 arch=('x86_64')
-license=('GNU')
+license=('GPL')
 depends=("sqlite>=3.5.9")
 options=('!strip')
 url="https://github.com/sasank-pankam/qkw"
