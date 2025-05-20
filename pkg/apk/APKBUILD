@@ -1,0 +1,26 @@
+# Maintainer: Sasank P <sasaankme@gmail.com>
+# Contributor: Ravi K <ravikishorejanjam@gmail.com>
+
+pkgname=qkw
+pkgver={{version}}
+pkgrel=0
+pkgdesc="Generalizing aliasing to simplify navigation, annotate CLI commands, add help-strings"
+url="https://github.com/sasank-pankam/qkw"
+arch="x86_64"
+license="GPL-3.0-or-later"
+depends="sqlite-libs libstdc++"
+makedepends="binutils tar xz"
+options="!strip"
+source="$pkgname-$pkgver.deb::https://github.com/sasank-pankam/qkw/releases/download/$pkgver/qkw-$pkgver.deb"
+builddir="$srcdir"
+
+
+package() {
+        cd "$builddir"
+
+        ar x "$pkgname-$pkgver.deb"
+        mkdir -p $pkgdir
+        tar -xf data.tar.xz -C "$pkgdir"
+
+        mkdir -p "$pkgdir/usr/bin"
+}
