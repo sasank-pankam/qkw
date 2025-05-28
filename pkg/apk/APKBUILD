@@ -21,6 +21,4 @@ package() {
         ar x "$pkgname-$pkgver.deb"
         mkdir -p $pkgdir
         tar -xf data.tar.xz -C "$pkgdir"
-
-        mkdir -p "$pkgdir/usr/bin"
 }
